@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Applied Dart formatter to all source files for pub.dev compliance
+- Shortened package description to comply with pub.dev requirements (60-180 characters)
 - Improved code formatting consistency
 
 ## [0.0.1] - 2025-11-13
