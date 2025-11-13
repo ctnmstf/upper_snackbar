@@ -11,8 +11,6 @@ topics:
   - notification
   - toast
   - alert
-  - ui
-  - animation
 
 screenshots:
   - description: 'Upper Snackbar Demo'
