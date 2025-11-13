@@ -1,6 +1,6 @@
 name: upper_snackbar
 description: A beautiful, customizable, and animated snackbar package for Flutter that displays notifications at the top of the screen with smooth animations and extensive customization options.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ctnmstf/upper_snackbar
 repository: https://github.com/ctnmstf/upper_snackbar
 issue_tracker: https://github.com/ctnmstf/upper_snackbar/issues

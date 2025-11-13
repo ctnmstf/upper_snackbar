@@ -325,14 +325,17 @@ class UpperSnackbar {
     if (customStyle == null) return defaultStyle;
 
     return SnackbarStyle(
-      backgroundColor: customStyle.backgroundColor ?? defaultStyle.backgroundColor,
+      backgroundColor:
+          customStyle.backgroundColor ?? defaultStyle.backgroundColor,
       textColor: customStyle.textColor ?? defaultStyle.textColor,
       iconColor: customStyle.iconColor ?? defaultStyle.iconColor,
       icon: customStyle.icon ?? defaultStyle.icon,
       borderRadius: customStyle.borderRadius ?? 12.0,
       elevation: customStyle.elevation ?? 8.0,
-      padding: customStyle.padding ?? const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-      margin: customStyle.margin ?? const EdgeInsets.symmetric(horizontal: 24.0),
+      padding: customStyle.padding ??
+          const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+      margin:
+          customStyle.margin ?? const EdgeInsets.symmetric(horizontal: 24.0),
       textStyle: customStyle.textStyle,
       width: customStyle.width,
       border: customStyle.border,
@@ -365,8 +368,12 @@ class UpperSnackbar {
                   MediaQuery.of(context).padding.top +
                   16.0 +
                   value,
-              left: position == SnackbarPosition.topRight ? null : (style.margin?.left ?? 24.0),
-              right: position == SnackbarPosition.topLeft ? null : (style.margin?.right ?? 24.0),
+              left: position == SnackbarPosition.topRight
+                  ? null
+                  : (style.margin?.left ?? 24.0),
+              right: position == SnackbarPosition.topLeft
+                  ? null
+                  : (style.margin?.right ?? 24.0),
               child: SizedBox(
                 width: position == SnackbarPosition.top
                     ? (style.width ?? MediaQuery.of(context).size.width - 48.0)
@@ -390,11 +397,14 @@ class UpperSnackbar {
                     }
                   : onTap,
               child: Container(
-                padding: style.padding ?? const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                padding: style.padding ??
+                    const EdgeInsets.symmetric(
+                        horizontal: 16.0, vertical: 12.0),
                 decoration: BoxDecoration(
                   color: style.gradient == null ? style.backgroundColor : null,
                   gradient: style.gradient,
-                  borderRadius: BorderRadius.circular(style.borderRadius ?? 12.0),
+                  borderRadius:
+                      BorderRadius.circular(style.borderRadius ?? 12.0),
                   border: style.border,
                   boxShadow: style.boxShadow,
                 ),
